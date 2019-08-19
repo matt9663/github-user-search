@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Github User Search Tool</h1>
+    </header>  
+    <main>
+      <form id="js-search-form">
+          <label for="search user">Search Github username:</label>
+          <input type="text" name="search-user" id="js-search-user" required>
+          <input type="submit" value="Search!">
+      </form>
+      <section id="results" class="hidden">
+          <h2>Associated Repos:</h2>
+          <ul id="results-list">
+          </ul>
+      </section>
+      <p class="errorMessage"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
